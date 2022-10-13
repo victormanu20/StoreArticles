@@ -1,0 +1,117 @@
+@import 'vars';
+.header-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 2px solid $--very-light-pink;
+    margin-bottom: 2rem;
+    top: 0;
+	position: sticky;
+    z-index: 10;
+    background-color: $--white;
+}
+.menu-mobile{
+    display: none; 
+}
+.nav-left__logo{
+    width: 120px;
+    margin-right: 10px;
+}
+.nav-left{
+    display: flex;
+}
+.ul-nav-left{
+    margin-left: 12px;
+}
+.item__link-page{
+    background: none;
+    color: $--very-light-pink ; 
+    border: 1px solid $--white;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: $--lg;
+
+}
+.item__link-page:hover{
+    border: 1px solid $--hospital-green;
+    color: $--hospital-green;
+    cursor: pointer;
+}
+.ul-nav-left, .ul-nav-right{
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.ul-nav-left__item:hover{
+    cursor: pointer;
+}
+.navbar-email{
+    background: none;
+    border: none;
+    color: $--very-light-pink;
+    font-size: $--sm;
+    padding: 6px 4px;
+    margin-right: 12px;
+}
+.navbar-email:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color: $--hospital-green;
+    color: $--white;
+    border-radius: 5px;
+}
+
+.navbar-shpping-cart{
+    position: relative;
+    padding: 8px;
+}
+.navbar-shpping-cart:hover{
+    cursor: pointer;
+    background-color: $--hospital-green;
+    border-radius: 50%;
+}
+
+.navbar-shpping-cart div{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $--hospital-green;
+    font-size: $--sm;
+    font-weight: bold;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media (max-width:640px) {
+
+    .header-nav .menu-mobile{
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: auto 0;
+    }
+    .header-nav__menu-mobile:hover{
+        cursor: pointer;
+    }
+    .header-nav{
+        padding:0 24px;
+    }
+
+    .ul-nav-left{
+        display: none;
+    }
+
+    .ul-nav-right li:nth-child(1){
+        display: none;
+    }
+    
+}

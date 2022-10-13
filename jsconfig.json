@@ -1,0 +1,32 @@
+//configuracion en JSON
+{
+    "compilerOptions": {
+        "baseUrl": "src",
+        "paths": {
+            "@pages/*" : [
+                "pages/*"
+            ],
+            "@containers/*" : [
+                "containers/*"   
+            ],
+            "@components/*" : [
+                "components/*"
+            ],
+            "@styles/*" : [
+                "styles/*"
+            ],
+            "@icons/*" : [
+                "assets/icons/*"
+            ],
+            "@logos/*" : [
+                "assets/logos/*"
+            ],
+            "@context/*" : [
+                "context/*"
+            ],
+            "@hooks/*" : [
+                "hooks/*"
+            ]
+        }
+    }
+}

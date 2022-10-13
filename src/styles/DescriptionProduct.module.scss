@@ -1,0 +1,15 @@
+.precio-descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.precio-descripcion p:nth-child(1){
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.precio-descripcion p:nth-child(2){
+    font-size: var(--md);
+}

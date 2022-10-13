@@ -1,0 +1,92 @@
+@import '_vars';
+.login{
+    width: 100%;
+    height:calc(100vh - 100px) ;
+    display: grid;
+    place-items: center;
+}
+
+.container-login{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    width: 300px;
+}
+
+.logo{ /*desktop*/
+    width: 150px;
+    margin-bottom: 40px;
+    justify-self: center;
+    display: none;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: $--sm;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: $--text-input-field;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    font-size: $--md;  
+    padding: 8px;    
+    margin-bottom: 16px;  
+}
+
+.primary-button {
+
+    background-color: $--hospital-green;
+    border-radius: 8px; 
+    border: none;
+    color: $--white;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: $--md;
+    font-weight: bold;
+}
+.login-button{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+.forgot-password{
+    text-decoration: none;
+    color: $--hospital-green;
+    text-align: center;
+    font-size: $--md;
+}
+
+.secundary-button{
+    background-color: $--white;
+    border-radius: 8px; 
+    border: 1px solid $--hospital-green;
+    color: $--hospital-green;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: $--md;
+    font-weight: bold;
+
+}
+
+
+
+@media (max-width: 640px) {
+    .logo{
+        display: block;
+    }
+    .Sign-button{
+        bottom: 16px;
+        width: 300px;
+        margin-bottom: 24px;
+
+    }
+}

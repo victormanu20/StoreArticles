@@ -1,0 +1,25 @@
+@import 'vars';
+.item{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.item img:nth-child(1){
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.item p:nth-child(2){
+    margin-left: 8px;
+    font-size: $--sm;
+    color: $--very-light-pink;
+
+}
+.item p:nth-child(3){
+    margin-right: 16px;
+    font-size: $--md;
+    color: $--black;
+    font-weight: bold;
+}

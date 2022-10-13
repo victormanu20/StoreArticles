@@ -1,0 +1,67 @@
+@import '_vars';
+.login{
+    width: 100%;
+    height: calc( 100vh - 100px);
+    display: grid;
+    place-items: center;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.title{
+    font-size: $--lg;
+    margin-bottom: 40px;
+    margin-top: 12px;
+    text-align: left;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: $--sm;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: $--text-input-field;
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    font-size: $--md;  
+    padding: 8px;    
+    margin-bottom: 28px;  
+}
+
+.primary-button {
+
+    background-color: $--hospital-green;
+    border-radius: 8px; 
+    border: none;
+    color: $--white;
+    margin-top: 24px;
+    height: 60px;
+    width: 100%;
+    cursor: pointer;
+    font-size: $--md;
+    font-weight: bold;
+}
+.login-button{
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+
+    .form-container{
+        height:100%; 
+        justify-content: space-between;
+    }
+    .create-account-button{
+        margin-bottom: 20px;
+    }
+}
